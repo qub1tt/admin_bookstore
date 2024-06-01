@@ -53,7 +53,9 @@ export const publisherSetTotalPage = (totalpage) => ({
 export const deleteBook = (id) => async (dispatch, getState) => {
   let res;
   try {
-    res = await axios.get(`${process.env.REACT_APP_API_URL}/admin/deletebook/` + id);
+    res = await axios.get(
+      `${process.env.REACT_APP_API_URL}/admin/deletebook/` + id
+    );
   } catch (err) {
     console.log(err);
     return;
@@ -133,9 +135,12 @@ export const addCategory = (name) => async (dispatch, getState) => {
   dispatch(resetCategory());
   let res;
   try {
-    res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/addcategory`, {
-      name: name,
-    });
+    res = await axios.post(
+      `${process.env.REACT_APP_API_URL}/admin/addcategory`,
+      {
+        name: name,
+      }
+    );
   } catch (err) {
     dispatch(addCategotyFail());
     return;
@@ -147,10 +152,13 @@ export const addCategory = (name) => async (dispatch, getState) => {
 export const updateCategory = (id, name) => async (dispatch, getState) => {
   let res;
   try {
-    res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/updatecategory`, {
-      id: id,
-      name: name,
-    });
+    res = await axios.post(
+      `${process.env.REACT_APP_API_URL}/admin/updatecategory`,
+      {
+        id: id,
+        name: name,
+      }
+    );
   } catch (err) {
     dispatch(updateCategoryFail());
     return;
@@ -191,10 +199,13 @@ export const addAuthor = (name) => async (dispatch, getState) => {
 export const updateAuthor = (id, name) => async (dispatch, getState) => {
   let res;
   try {
-    res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/updateauthor`, {
-      id: id,
-      name: name,
-    });
+    res = await axios.post(
+      `${process.env.REACT_APP_API_URL}/admin/updateauthor`,
+      {
+        id: id,
+        name: name,
+      }
+    );
   } catch (err) {
     dispatch(updateAuthorFail());
     return;
@@ -221,9 +232,12 @@ export const addPublisher = (name) => async (dispatch, getState) => {
   dispatch(resetPublisher());
   let res;
   try {
-    res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/addpublisher`, {
-      name: name,
-    });
+    res = await axios.post(
+      `${process.env.REACT_APP_API_URL}/admin/addpublisher`,
+      {
+        name: name,
+      }
+    );
   } catch (err) {
     dispatch(addPublisherFail());
     return;
@@ -235,10 +249,13 @@ export const addPublisher = (name) => async (dispatch, getState) => {
 export const updatePublisher = (id, name) => async (dispatch, getState) => {
   let res;
   try {
-    res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/updatepublisher`, {
-      id: id,
-      name: name,
-    });
+    res = await axios.post(
+      `${process.env.REACT_APP_API_URL}/admin/updatepublisher`,
+      {
+        id: id,
+        name: name,
+      }
+    );
   } catch (err) {
     dispatch(updatePublisherFail());
     return;
@@ -342,7 +359,10 @@ export const addBook =
     data.append("id_author", id_author);
     let res;
     try {
-      res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/addbook`, data);
+      res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/admin/addbook`,
+        data
+      );
     } catch (err) {
       dispatch(addBookFail());
       return;
@@ -375,7 +395,10 @@ export const updateBook =
     data.append("id_author", id_author);
     let res;
     try {
-      res = await axios.post(`${process.env.REACT_APP_API_URL}/admin/updatebook`, data);
+      res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/admin/updatebook`,
+        data
+      );
     } catch (err) {
       dispatch(updateBookFail());
       return;
@@ -395,6 +418,7 @@ export const billSetTotalPage = (totalpage) => ({
   type: bookTypes.BILL_SET_TOTAL_PAGE,
   totalpage,
 });
+
 export const getBill = (status) => async (dispatch, getState) => {
   let link = `${process.env.REACT_APP_API_URL}/bill/status/99`;
   if (status === "0") {
@@ -412,6 +436,7 @@ export const getBill = (status) => async (dispatch, getState) => {
   dispatch(setBill(res.data.data));
   dispatch(billSetTotalPage(res.data.totalPage));
 };
+
 export const updateIssendSuccess = () => ({
   type: bookTypes.UPDATE_ISSEND_SUCCESS,
 });
@@ -423,10 +448,13 @@ export const updateIssend = (name, id) => async (dispatch, getState) => {
   let res;
   try {
     console.log(typeof name);
-    res = await axios.post(`${process.env.REACT_APP_API_URL}/bill/updateissend`, {
-      name: name,
-      id: id,
-    });
+    res = await axios.post(
+      `${process.env.REACT_APP_API_URL}/bill/updateissend`,
+      {
+        name: name,
+        id: id,
+      }
+    );
   } catch (err) {
     dispatch(updateIssendFail());
     return;

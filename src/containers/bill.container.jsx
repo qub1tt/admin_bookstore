@@ -6,7 +6,7 @@ import NavbarContainer from "./navbar.container";
 import Slider from "./slider.container";
 import * as userActions from "../actions/user.action";
 import Bill from "../components/bill/bill";
-import { Navigate } from "react-router-dom"; 
+import { Navigate } from "react-router-dom";
 
 class BillContainer extends Component {
   constructor() {
