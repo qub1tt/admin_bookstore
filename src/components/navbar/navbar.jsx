@@ -46,7 +46,10 @@ class Navbar extends Component {
                   </a>
                 </li>
                 <li>
-                  <a onClick={() => this.props.logout()}>
+                  <a
+                    onClick={() => this.props.logout()}
+                    style={{ cursor: "pointer" }}
+                  >
                     <i className="icon_key_alt"></i> Log Out
                   </a>
                 </li>
