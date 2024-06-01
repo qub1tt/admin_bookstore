@@ -45,13 +45,7 @@ class Login extends Component {
                   onChange={(e) => this.setState({ password: e.target.value })}
                 />
               </div>
-              <label className="checkbox">
-                <input type="checkbox" value="remember-me" /> Remember me
-                <span className="pull-right">
-                  {" "}
-                  <a href="#"> Forgot Password?</a>
-                </span>
-              </label>
+
               <button
                 className="btn btn-primary btn-lg btn-block"
                 onClick={() =>
