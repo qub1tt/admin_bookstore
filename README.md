@@ -68,7 +68,7 @@ Thống kê số đơn hàng, sản phẩm, người mua và tổng thu theo ng�
 - Bootstrap
 
 ### Hướng dẫn cài đặt:
-Khi muốn sử dụng trên local, vào file .env sửa REACT_APP_API_URL thành "http://localhost:8080".
+Khi muốn sử dụng trên local, vào file .env sửa giá trị biến REACT_APP_API_URL = "http://localhost:8080".
 
 1. Cài đặt Nodejs phiên bản mới nhất tại https://nodejs.org/en/download/prebuilt-installer.
 2. Mở terminal clone repository này.
