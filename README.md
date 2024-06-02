@@ -51,7 +51,7 @@ Quản lý đơn hàng của các tài khoản đã đặt mua. Có thể cập 
 
 ![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/7c66221d-906c-4b70-9780-d96af92aa21c)
 
-### 8. Trang thống kê
+### 9. Trang thống kê
 Thống kê số đơn hàng, sản phẩm, người mua và tổng thu theo ngày, tháng, năm.
 
 ![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/271ec3fd-5a78-4084-b1cf-a338a9addc73)
