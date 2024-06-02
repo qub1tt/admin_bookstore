@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# NT208 - Selling Books Website Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Giới thiệu:
+Đây là trang admin của web BookstoRee.
 
-## Available Scripts
+## Mô tả các trang:
 
-In the project directory, you can run:
+### 1. Đăng ký/Đăng nhập
+Đăng nhập tài khoản admin để có thể sử dụng.
 
-### `npm start`
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/af9b233a-ab50-4ff5-bcbb-d94ad5f55b38)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Trang chủ:
+Trang chủ sẽ liệt kệ top 10 những quyển sách bán chạy nhất. Ngoài ra có thanh sidebar để điều hướng và navbar để đăng xuất tài khoản.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/a865cdd2-b7a7-4f35-84b4-5c8c68e0a65b)
 
-### `npm test`
+### 3. Trang quản lý sách:
+Quản lý dữ liệu sách có các chức năng cơ bản như thêm, sửa, xóa.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Screenshot 2024-06-02 133715](https://github.com/qub1tt/admin_bookstore/assets/91910146/70fcf0a6-cf58-44cc-bf4b-e67bfeb0e9c6)
 
-### `npm run build`
+![Screenshot 2024-06-02 133723](https://github.com/qub1tt/admin_bookstore/assets/91910146/91601f75-96ac-4066-a3ee-d1c2fcdffdd0)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 4. Trang quản lý thể loại
+Quản lý dữ liệu thể loại của sách có các chức năng cơ bản như thêm, sửa
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/75139355-95ed-44d4-aaa9-56e5de7ca59d)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 5. Trang quản lý nhà xuất bản
+Quản lý dữ liệu nhà xuất bản của sách có các chức năng cơ bản như thêm, sửa
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/143ac308-cb9b-477c-89e9-ed5bc9f2b7e6)
+    
+### 6. Trang quản lý tác giả
+Quản lý dữ liệu tác giả của sách có các chức năng cơ bản như thêm, sửa
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/d206d443-30e9-4158-a3b6-4c2526303db1)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### 7. Trang quản lý người dùng
+Quản lý các tài khoản của người dùng, có thể thêm, sửa, xóa và phân quyền cho các tài khoản.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/9ccac2a1-865c-4d57-97fd-cd394da63e55)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### 8. Trang đơn hàng
+Quản lý đơn hàng của các tài khoản đã đặt mua. Có thể cập nhật trạng thái đơn hàng.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/7c66221d-906c-4b70-9780-d96af92aa21c)
 
-### Analyzing the Bundle Size
+### 8. Trang thống kê
+Thống kê số đơn hàng, sản phẩm, người mua và tổng thu theo ngày, tháng, năm.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![image](https://github.com/qub1tt/admin_bookstore/assets/91910146/271ec3fd-5a78-4084-b1cf-a338a9addc73)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Cài đặt môi trường và sử dụng:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Các công nghệ sử dụng:
 
-### Deployment
+- ReactJS
+- Axios
+- Redux/Redux Toolkit
+- Bootstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Hướng dẫn cài đặt:
+Khi muốn sử dụng trên local, vào file .env sửa REACT_APP_API_URL thành "http://localhost:8080".
 
-### `npm run build` fails to minify
+1. Cài đặt Nodejs phiên bản mới nhất.
+2. Clone repository này.
+3. Thực hiện lệnh  `npm install --legacy-peer-deps` để cài đặt các module cần thiết.
+4. Chạy lệnh `npm start` để khởi động web.
+5. Sau khi đã khởi động Backend thì có thể sử dụng được web (Hướng dẫn cài đặt Backend ở repo BackEnd).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Tài khoản để test:
+
+Tài khoản admin:
+  - username: clonenick169@gmail.com
+  - password: 123456
+
