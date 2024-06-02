@@ -72,7 +72,7 @@ Khi muốn sử dụng trên local, vào file .env sửa giá trị biến REACT
 
 1. Cài đặt Nodejs phiên bản mới nhất tại https://nodejs.org/en/download/prebuilt-installer.
 2. Mở terminal clone repository này.
-> git clone https://github.com/qub1tt/bookstore](https://github.com/qub1tt/admin_bookstore)
+> git clone https://github.com/qub1tt/admin_bookstore
 
 > cd admin_bookstore
 3. Thực hiện lệnh  `npm install --legacy-peer-deps` để cài đặt các module cần thiết.
